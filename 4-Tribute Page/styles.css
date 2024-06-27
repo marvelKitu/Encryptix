@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.landscape-photo {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.landscape-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #16a085;
+    margin-bottom: 10px;
+}
+
+.intro p, .qualities p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out; /* Adding transition for color change */
+}
+
+.intro p:hover {
+    color: #e74c3c; /* Changing text color on hover */
+}
+
+.qualities li:hover{
+    color: #e74c3c;
+}
+
+.qualities ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Image Slider Styling */
+.image-slider {
+    overflow:hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.image-slider img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.5s ease;
+}
+
+/* Animation for Sliding Effect */
+@keyframes slideImages {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.image-slider {
+    animation: slideImages 16s linear infinite;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-top: 1px solid #bdc3c7;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: #7f8c8d;
+}
