@@ -1,0 +1,147 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #b6a9e0 , #ddd);/* Adding a light background color for contrast */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+header:hover {
+    background: #555;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #ffa500;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.about-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.about-container img:hover {
+    transform: scale(1.1);
+}
+
+.about-container p {
+    max-width: 600px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background: #ddd;
+    transform: translateY(-5px);
+}
+
+.project {
+    margin: 2rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#contact p {
+    margin: 4rem 0;
+    color: #333; /* Ensuring text color is different from footer background */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+footer:hover {
+    background: #555;
+}
